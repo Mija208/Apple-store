@@ -1,11 +1,12 @@
 import React from 'react'
+import Portafolio from '../Components/Portafolio'
 
 const Home = () => {
   return (
-    <div className='text-center mt-4'>
-      <h2>Bienvenidos a Iphone Extreme</h2>
-      <p>La mejor plataforma de soporte para tus articulos Apple</p>
-      <p className='display-2'>☎️ 🍎 💻</p>
+    <div>
+    <h2>Portafolio de Fotografías</h2>
+    <Portafolio/>
+      
     </div>
   )
 }
