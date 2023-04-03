@@ -5,6 +5,7 @@ import FavoritoPage from './Pages/FavoritoPage'
 import Home from './Pages/Home'
 import NotFound from './Pages/NotFound'
 import { Context } from './context/Context'
+import './App.css'
 
 const App = () => {
   const [fotos, setFotos] = useState([]);
@@ -30,11 +31,12 @@ const App = () => {
 
   return (
     <div>
-      <Context.Provider value={fotos}>
+      <Context.Provider value={{fotos, setFotos}}>
 
       <BrowserRouter>
       
       <Navbar/>
+      <FavoritoPage/>
        
       <Routes>
         <Route path='/' element= {<Home/>}/>
